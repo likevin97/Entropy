@@ -1,0 +1,182 @@
+{
+    "physicsSize": [
+        32,
+        18
+    ],
+    "graphicSize": [
+        1024,
+        576
+    ],
+    "gravity": -9.8,
+    "energy": 18,
+    "avatar": {
+        "pos": [
+            1,
+            6
+        ],
+        "size": [
+            0.45,
+            0.61
+        ],
+        "bodytype": "dynamic",
+        "density": 1,
+        "friction": 0,
+        "restitution": 0,
+        "texture": [
+            "dude"
+        ],
+        "sensorsize": [
+            0.183,
+            0.05
+        ],
+        "sensorname": "dudeGroundSensor"
+    },
+    "exit": {
+        "points": [
+            "0.0f",
+            "0.0f",
+            "0.0f",
+            "1.0f",
+            "1.0f",
+            "1.0f",
+            "1.0f",
+            "0.0f"
+        ],
+        "pos": [
+            31,
+            4
+        ],
+        "texture": "exit"
+    },
+    "powerup": {},
+    "checkpoint": {},
+    "enemy": {},
+    "platform": {
+        "platform0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "11.0f",
+                "3.0f",
+                "11.0f",
+                "0.0f"
+            ],
+            "pos": [
+                21,
+                0
+            ],
+            "texture": "platform"
+        },
+        "platform1": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                20,
+                0
+            ],
+            "texture": "edgeL"
+        },
+        "platform2": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                20,
+                3
+            ],
+            "texture": "topleft"
+        },
+        "platform3": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "11.0f",
+                "1.0f",
+                "11.0f",
+                "0.0f"
+            ],
+            "pos": [
+                21,
+                3
+            ],
+            "texture": "edgeU"
+        }
+    },
+    "vine": {
+        "vine0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "11.0f",
+                "1.0f",
+                "11.0f",
+                "0.0f"
+            ],
+            "pos": [
+                0,
+                3
+            ],
+            "texture": "vine"
+        },
+        "vine1": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "0.0f"
+            ],
+            "pos": [
+                11,
+                3
+            ],
+            "texture": "RightVineTaper"
+        },
+        "vine2": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                13,
+                3
+            ],
+            "texture": "RightVineEnd"
+        }
+    },
+    "root": {},
+    "breakable": {},
+    "Spike": {},
+    "RightSpike": {},
+    "LeftSpike": {}
+}

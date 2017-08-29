@@ -1,0 +1,387 @@
+{
+    "textures": {
+      "background": {
+        "file":   "Background.png",
+        "wrap":   false
+      },
+      "endOverlay": {
+        "file": "menu/overlay_menu.png",
+        "wrap": false
+      },
+      "powerfillback": {
+        "file": "powerupgray.png",
+        "wrap": false
+      },
+      "powerline": {
+        "file": "powerupline.png",
+        "wrap": false
+      },
+      "scene1": {
+        "file": "cutscene/1.jpg",
+        "wrap": false
+      },
+      "scene2": {
+        "file": "cutscene/2.jpg",
+        "wrap": false
+      },
+      "scene3": {
+        "file": "cutscene/3.jpg",
+        "wrap": false
+      },
+      "scene4": {
+        "file": "cutscene/4.jpg",
+        "wrap": false
+      },
+      "scene5": {
+        "file": "cutscene/5.jpg",
+        "wrap": false
+      },
+      "scene6": {
+        "file": "cutscene/6.jpg",
+        "wrap": false
+      },
+      "crystal": {
+        "file": "tutorialcrystal.png",
+        "wrap": false
+      },
+      "level5": {
+        "file": "menu/select4.png",
+        "wrap": false
+      },
+      "energy_fill": {
+        "file": "energy_fill.png",
+        "wrap": false
+      },
+      "energy_fill_back": {
+        "file": "energy_fill_back.png",
+        "wrap": false
+      },
+      "powerleaf1" : {
+        "file": "powerleaf1.png",
+        "wrap": false
+      },
+      "powerleaf2" : {
+        "file": "powerleaf2.png",
+        "wrap": false
+      },
+      "powerleaf3" : {
+        "file": "powerleaf3.png",
+        "wrap": false
+      },
+      "powerleaf4" : {
+        "file": "powerleaf4.png",
+        "wrap": false
+      },
+      "powerleaf5" : {
+        "file": "powerleaf5.png",
+        "wrap": false
+      },
+      "energy_line": {
+        "file": "energy_line.png",
+        "wrap": false
+      },
+      "level1": {
+        "file":   "menu/select1.png",
+        "wrap":   false
+      },
+      "level2": {
+        "file":   "menu/select2.png",
+        "wrap":   false
+      },
+      "level3": {
+        "file":   "menu/select3.png",
+        "wrap":   false
+      },
+      "level4": {
+        "file":   "menu/select4.png",
+        "wrap":   false
+      },
+      "pointer": {
+        "file": "menu/menu_pointer.png",
+        "wrap": false
+      },
+      "pausescreen": {
+        "file": "menu/pausescreen.png",
+        "wrap": false
+      },
+      "darkOverlay":{
+        "file": "menu/darkOverlay.png",
+        "wrap": false
+      },
+      "title": {
+        "file": "Title.png",
+        "wrap": false
+      },
+      "breakable": {
+        "file": "breakable.png",
+        "wrap": true
+      },
+      "joint": {
+        "file": "joint.png",
+        "wrap": false
+      },
+      "flyingenemy": {
+        "file": "fungus_ray_small.png",
+        "wrap": false
+      },
+      "rootanchor": {
+        "file": "root_anchor.png",
+        "wrap": false
+      },
+      "opening_back": {
+        "file": "opening_back.png",
+        "wrap": false
+      },
+      "opening_front": {
+        "file": "opening_front.png",
+        "wrap": false
+      },
+    	"platform": {
+    		"file":		"shared/dirt1.png",
+    		"wrap":		true
+    	},
+      "exit": { 
+         "file":	"opening_front.png",
+         "wrap":	false
+      },
+      "root1": {
+        "file": "rootPlaceholder.png",
+        "wrap": false
+      },
+      "rootpiece_l": {
+        "file": "root_piece_l.png",
+        "wrap": false
+      },
+      "rootpiece_r": {
+        "file": "root_piece_r.png",
+        "wrap": false
+      },
+      "endroot_l": {
+        "file": "endroot_l.png",
+        "wrap": false
+      },
+      "endroot_r": {
+        "file": "endroot_r.png",
+        "wrap": false
+      },
+      "root2": {
+        "file": "rootPlaceholder2.png",
+        "wrap": false
+      },
+      "verticalroot": {
+        "file": "verticalroot.png",
+        "wrap": true
+      },
+      "rootplatform": {
+        "file": "rootplatform.png",
+        "wrap": true
+      },
+      "title": {
+        "file": "Title.png",
+        "wrap": false
+      },
+      "walkstrip": {
+        "file": "walkstrip.png",
+        "wrap": false
+      },
+      "play": {
+        "file": "shared/play.png",
+        "wrap": false
+      },
+      "progressbar": {
+        "file": "shared/progressbar.png",
+        "wrap": false
+      },
+      "energybar": {
+        "file": "shared/energyBar.png",
+        "wrap": false
+      },
+      "powerup": {
+        "file": "platform/powerup.png",
+        "wrap": false
+      },
+      "dude": {
+        "file": "platform/dude.png",
+        "wrap": false
+      },
+      "vine": {
+        "file": "grw_terr.png",
+        "wrap": true
+      },
+      "Spike": {
+        "file": "spike.png",
+        "wrap": true
+      },
+      "SpikeDirt": {
+        "file": "spikeDirt.png",
+        "wrap": true
+      },
+      "LeftSpikeDirt": {
+        "file": "spikeDirtL.png",
+        "wrap": true
+      },
+      "RightSpikeDirt": {
+        "file": "spikeDirtR.png",
+        "wrap": true
+      },
+      "LeftSpike": {
+        "file": "spikeL.png",
+        "wrap": true
+      },
+      "RightSpike": {
+        "file": "spikeR.png",
+        "wrap": true
+      },
+      "edgeU": {
+        "file": "edgeU.png",
+        "wrap": true
+      },
+      "edgeL": {
+        "file": "edgeL.png",
+        "wrap": true
+      },
+      "edgeD": {
+        "file": "edgeD.png",
+        "wrap": true
+      },
+      "edgeR": {
+        "file": "edgeR.png",
+        "wrap": true
+      },
+      "breakabletop": {
+        "file": "breakabletop.png",
+        "wrap": true
+      },
+      "breakableleft": {
+        "file": "breakableleft.png",
+        "wrap": true
+      },
+      "breakabledown": {
+        "file": "breakabledown.png",
+        "wrap": true
+      },
+      "breakablebottom": {
+        "file": "breakabledown.png",
+        "wrap": true
+      },
+      "breakableright": {
+        "file": "breakableright.png",
+        "wrap": true
+      },
+      "breakabletopleft": {
+        "file": "breakabletopleft.png",
+        "wrap": true
+      },
+      "breakablebottomleft": {
+        "file": "breakablebottomleft.png",
+        "wrap": true
+      },
+      "breakabletopright": {
+        "file": "breakabletopright.png",
+        "wrap": true
+      },
+      "breakablebottomright": {
+        "file": "breakablebottomright.png",
+        "wrap": true
+      },
+      "breakableedgethreetop": {
+        "file": "breakableedgethreetop.png",
+        "wrap": true
+      },
+      "breakableedgethreedown": {
+        "file": "breakableedgethreedown.png",
+        "wrap": true
+      },
+      "breakableedgethreeleft": {
+        "file": "breakableedgethreeleft.png",
+        "wrap": true
+      },
+      "breakableedgethreeright": {
+        "file": "breakableedgethreeright.png",
+        "wrap": true
+      },
+      "breakableedgethreeup": {
+        "file": "breakableedgethreetop.png",
+        "wrap": true
+      },
+      "breakabletopdown": {
+        "file": "breakabletopdown.png",
+        "wrap": true
+      },
+      "breakableleftright": {
+        "file": "breakableleftright.png",
+        "wrap": true
+      },
+      "LeftVineEnd": {
+        "file": "rEndL.png",
+        "wrap": false
+      },
+      "RightVineEnd": {
+        "file": "rEndR.png",
+        "wrap": false
+      },
+      "LeftVineTaper": {
+        "file": "rTaperL.png",
+        "wrap": false
+      },
+      "RightVineTaper": {
+        "file": "rTaperR.png",
+        "wrap": false
+      },
+      "topleft": {
+        "file": "topleft.png",
+        "wrap": true
+      },
+      "topright": {
+        "file": "topright.png",
+        "wrap": true
+      },
+      "bottomleft": {
+        "file": "bottomleft.png",
+        "wrap": true
+      },
+      "bottomright": {
+        "file": "bottomright.png",
+        "wrap": true
+      }
+  	},
+  	"fonts": {
+  		"display": {
+  			"file": 	"menu/menuFont.ttf",
+  			"size": 	50
+  		},
+        "tutorial": {
+          "file": 	"menu/menuFont.ttf",
+          "size": 	15
+        }
+  	},
+  	"sounds": {
+        "win": {
+            "file": "platform/victory.mp3"
+        },
+        "break": {
+            "file": "platform/break.mp3"
+        },
+        "grow": {
+            "file": "platform/growing.mp3"
+        },
+        "powerup": {
+            "file": "platform/jump.mp3"
+        },
+        "fail": {
+            "file": "platform/plop.mp3"
+        },
+        "start": {
+            "file": "platform/plop.mp3"
+        },
+        "shrink": {
+            "file": "platform/shrink.mp3"
+        },
+        "walk": {
+          "file": "platform/walking.mp3"
+        },
+        "track1": {
+          "file": "platform/track1.mp3"
+        }
+  	}
+}

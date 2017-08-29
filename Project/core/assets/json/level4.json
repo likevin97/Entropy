@@ -1,0 +1,574 @@
+{
+    "physicsSize": [
+        32,
+        18
+    ],
+    "graphicSize": [
+        1024,
+        576
+    ],
+    "gravity": -9.8,
+    "energy": 10,
+    "avatar": {
+        "pos": [
+            1,
+            14
+        ],
+        "size": [
+            0.45,
+            0.61
+        ],
+        "bodytype": "dynamic",
+        "density": 1,
+        "friction": 0,
+        "restitution": 0,
+        "texture": [
+            "dude"
+        ],
+        "sensorsize": [
+            0.183,
+            0.05
+        ],
+        "sensorname": "dudeGroundSensor"
+    },
+    "exit": {
+        "points": [
+            "0.0f",
+            "0.0f",
+            "0.0f",
+            "1.0f",
+            "1.0f",
+            "1.0f",
+            "1.0f",
+            "0.0f"
+        ],
+        "pos": [
+            31,
+            1
+        ],
+        "texture": "exit"
+    },
+    "powerup": {
+        "powerup0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                16,
+                14
+            ],
+            "texture": "powerup"
+        }
+    },
+    "checkpoint": {},
+    "enemy": {
+        "enemy0": {
+            "pos": [
+                10,
+                15
+            ],
+            "size": [
+                0.45,
+                0.61
+            ],
+            "bodytype": "dynamic",
+            "density": 1,
+            "friction": 0,
+            "restitution": 0,
+            "type": 0,
+            "sensorsize": [
+                0.183,
+                0.05
+            ],
+            "sensorname": "enemySensor"
+        },
+        "enemy1": {
+            "pos": [
+                25,
+                9
+            ],
+            "size": [
+                0.45,
+                0.61
+            ],
+            "bodytype": "dynamic",
+            "density": 1,
+            "friction": 0,
+            "restitution": 0,
+            "type": 1,
+            "sensorsize": [
+                0.183,
+                0.05
+            ],
+            "sensorname": "enemySensor"
+        }
+    },
+    "platform": {
+        "platform0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "8.0f",
+                "1.0f",
+                "8.0f",
+                "0.0f"
+            ],
+            "pos": [
+                13,
+                13
+            ],
+            "texture": "edgeU"
+        },
+        "platform1": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                27,
+                13
+            ],
+            "texture": "edgeU"
+        },
+        "platform2": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                27,
+                12
+            ],
+            "texture": "bottomleft"
+        },
+        "platform3": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                28,
+                12
+            ],
+            "texture": "edgeD"
+        },
+        "platform4": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                20,
+                12
+            ],
+            "texture": "bottomright"
+        },
+        "platform5": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                13,
+                12
+            ],
+            "texture": "bottomleft"
+        },
+        "platform6": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "6.0f",
+                "1.0f",
+                "6.0f",
+                "0.0f"
+            ],
+            "pos": [
+                14,
+                12
+            ],
+            "texture": "edgeD"
+        },
+        "platform7": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                2,
+                8
+            ],
+            "texture": "edgeU"
+        },
+        "platform8": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                7,
+                8
+            ],
+            "texture": "edgeU"
+        },
+        "platform9": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                8
+            ],
+            "texture": "topright"
+        },
+        "platform10": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                7
+            ],
+            "texture": "bottomright"
+        },
+        "platform11": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                8,
+                7
+            ],
+            "texture": "edgeD"
+        },
+        "platform12": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                7,
+                7
+            ],
+            "texture": "bottomleft"
+        },
+        "platform13": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                2,
+                7
+            ],
+            "texture": "edgeD"
+        },
+        "platform14": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                25,
+                0
+            ],
+            "texture": "topleft"
+        },
+        "platform15": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "6.0f",
+                "1.0f",
+                "6.0f",
+                "0.0f"
+            ],
+            "pos": [
+                26,
+                0
+            ],
+            "texture": "edgeU"
+        },
+        "platform16": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "20.0f",
+                "1.0f",
+                "20.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                8
+            ],
+            "texture": "edgeU"
+        },
+        "platform17": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "20.0f",
+                "1.0f",
+                "20.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                7
+            ],
+            "texture": "edgeD"
+        },
+        "platform18": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "0.0f"
+            ],
+            "pos": [
+                0,
+                8
+            ],
+            "texture": "edgeU"
+        },
+        "platform19": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "0.0f"
+            ],
+            "pos": [
+                0,
+                7
+            ],
+            "texture": "edgeD"
+        },
+    },
+    "vine": {
+        "vine0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "13.0f",
+                "1.0f",
+                "13.0f",
+                "0.0f"
+            ],
+            "pos": [
+                0,
+                13
+            ],
+            "texture": "vine"
+        },
+        "vine3": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "14.0f",
+                "1.0f",
+                "14.0f",
+                "0.0f"
+            ],
+            "pos": [
+                0,
+                1
+            ],
+            "texture": "vine"
+        },
+        "vine4": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "0.0f"
+            ],
+            "pos": [
+                14,
+                1
+            ],
+            "texture": "RightVineTaper"
+        },
+        "vine5": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                16,
+                1
+            ],
+            "texture": "RightVineEnd"
+        }
+    },
+    "root": {
+        "root0": {
+            "pos": [
+                13,
+                1
+            ],
+            "direction": 1,
+            "length": 3
+        }
+    },
+    "breakable": {
+        "breakable0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "6.0f",
+                "1.0f",
+                "6.0f",
+                "0.0f"
+            ],
+            "pos": [
+                21,
+                13
+            ],
+            "texture": "breakabletopdown"
+        },
+        "breakable1": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                3,
+                8
+            ],
+            "texture": "breakabletopdown"
+        }
+    },
+    "Spike": {},
+    "RightSpike": {},
+    "LeftSpike": {}
+}

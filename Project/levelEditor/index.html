@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Entropy Level Editor</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="check">
+		<i class="fa fa-5x fa-check" aria-hidden="true"></i>
+	</div>
+	<div id="floatLeft">
+		<div id="view">
+		</div>
+
+		<div id="jsonView">
+			<center>
+				<b>JSON Preview</b><br>
+				<div id="json"></div>
+				<div id="bottomRight" style="position: fixed;bottom: 0;right:25%;"><button onclick="exportToJsonFile()">Download JSON</button></div>
+			</center>
+		</div>
+	</div>
+
+
+	<div id="controls">
+	<div id="inputs_hw">
+		Game width: <input id="numCols" type="text" value="32.0"><br>
+		Game height: <input id="numRows" type="text" value="18.0"><br>
+		<br>
+		Window width: <input id="winWidth" type="text" value="1024"><br>
+		Window height: <input id="winHeight" type="text" value="576"><br>
+		<br>
+		Starting energy: <input id="energy" type="text" value="10">
+	</div>
+	<button onclick="tableCreate($('#numCols').val(),$('#numRows').val(),$('#winWidth').val(),$('#winHeight').val(),$('#energy').val())">Create/Reset Level</button><button id="undoBtn" onclick="undoLastSelection()" disabled>Undo Last Placement</button><br>
+	<br>
+	<br>
+	<div class="selection">
+		<b>Selected:</b>
+
+
+		<div id="selectedTxt">
+			Nothing
+		</div>
+		<button onclick="cancelSel()">Clear Selection</button>
+	</div>
+	<br>
+	<div id="elementsTable">
+		<center>
+			<b>Single Block Elements</b>
+		</center>
+		<table class="elements">
+			<tr>
+				<td onclick="select('cota')"><img height="30" id="cota" src="cota.png" title="Cota">
+				</td>
+
+				<td onclick="select('en_fly')"><img height="30" id="en_fly" src="en_fly.png" title="Flying enemy">
+				</td>
+
+				<td onclick="select('en_grnd')"><img height="30" id="en_grnd" src="en_grnd.png" title="Ground enemy">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('spikeL')"><img height="30" width="30" id="spikeL" src="spikeL.png" title="Left spike">
+				</td>
+
+				<td onclick="select('spike')"><img height="30" width="30" id="spike" src="spike.png" title="Spike">
+				</td>
+
+
+				<td onclick="select('spikeR')"><img height="30" id="spikeR" src="spikeR.png" title="Right spike" width="30">
+				</td>
+			</tr>
+
+			<tr>
+				
+				<td onclick="select('spikeRrotD')"><img height="30" id="spikeRrotD" src="spikeRrotD.png" title="Right spike pointing down" width="30">
+				</td>
+
+				<td onclick="select('spikerotD')"><img height="30" width="30" id="spikerotD" src="spikerotD.png" title="Spike pointing down">
+				</td>
+
+				<td onclick="select('spikeLrotD')"><img height="30" width="30" id="spikeLrotD" src="spikeLrotD.png" title="Left spike pointing down">
+				</td>
+			</tr>
+
+
+			<tr>
+				<td onclick="select('spikeLrotR')"><img height="30" width="30" id="spikeLrotR" src="spikeLrotR.png" title="Left spike pointing right">
+				</td>
+
+				<td onclick="select('spikerotR')"><img height="30" width="30" id="spikerotR" src="spikerotR.png" title="Spike pointing right">
+				</td>
+
+
+				<td onclick="select('spikeRrotR')"><img height="30" id="spikeRrotR" src="spikeRrotR.png" title="Right spike pointing right" width="30">
+				</td>
+			</tr>
+
+			<tr>
+				<td onclick="select('spikeLrotL')"><img height="30" width="30" id="spikeLrotL" src="spikeLrotL.png" title="Left spike pointing left">
+				</td>
+
+				<td onclick="select('spikerotL')"><img height="30" width="30" id="spikerotL" src="spikerotL.png" title="Spike pointing left">
+				</td>
+
+
+				<td onclick="select('spikeRrotL')"><img height="30" id="spikeRrotL" src="spikeRrotL.png" title="Right spike pointing left" width="30">
+				</td>
+			</tr>
+
+
+			<tr>
+				<td onclick="select('pwr-up')"><img height="30" id="pwr-up" src="pwr-up.png" title="Power-up">
+				</td>
+
+				<!--<td onclick="select('chkpt')"><img height="30" id="chkpt" src="chkpt.png" title="Checkpoint">
+				</td>-->
+
+				<td onclick="select('goal')"><img height="30" id="goal" src="goal.png" title="Goal">
+				</td>
+			</tr>
+		</table>
+
+		<center>
+			<b>Multi Block Elements</b><br>
+			First click sets the bottom left corner<br>
+			Second click sets the top right corner<br>
+		</center>
+
+
+		<table class="elements" id="dirts">
+			<tr>
+				<td onclick="select('ungr_terr')"><img height="30" id="ungr_terr" src="ungr_terr.png" title="Ungrowabble terrain">
+				</td>
+
+				<td onclick="select('grw_terr')"><img height="30" width="30" id="grw_terr" src="grw_terr.png" title="Growable terrain">
+				</td>
+
+				<td onclick="select('brk_terr')"><img height="30" id="brk_terr" src="brk_terr.png" title="Breakable terrain">
+				</td>
+
+				<td onclick="select('vine')"><img height="30" id="vine" src="vine.png" title="Vine" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('edgeL')"><img height="30" id="edgeL" src="edgeL.png" title="Left edge">
+				</td>
+
+				<td onclick="select('edgeU')"><img height="30" width="30" id="edgeU" src="edgeU.png" title="Up edge">
+				</td>
+
+				<td onclick="select('edgeD')"><img height="30" id="edgeD" src="edgeD.png" title="Down edge">
+				</td>
+
+				<td onclick="select('edgeR')"><img height="30" id="edgeR" src="edgeR.png" title="Right edge" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('topright')"><img height="30" id="topright" src="topright.png" title="Top Right Corner" width="30">
+				</td>
+
+				<td onclick="select('topleft')"><img height="30" width="30" id="topleft" src="topleft.png" title="Top Left Corner">
+				</td>
+
+				<td onclick="select('bottomright')"><img height="30" width="30" id="bottomright" src="bottomright.png" title="Bottom Right Corner">
+				</td>
+
+				<td onclick="select('bottomleft')"><img height="30" id="bottomleft" src="bottomleft.png" title="Bottom Left Corner" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('rEndL')"><img height="30" id="rEndL" src="rEndL.png" title="Left root end" width="30">
+				</td>
+
+				<td onclick="select('rTaperL')"><img height="30" width="30" id="rTaperL" src="rTaperL.png" title="Left root taper">
+				</td>
+
+				<td onclick="select('rTaperR')"><img height="30" width="30" id="rTaperR" src="rTaperR.png" title="Right root taper">
+				</td>
+
+				<td onclick="select('rEndR')"><img height="30" id="rEndR" src="rEndR.png" title="Right root end" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('spikeDirtL')"><img height="30" width="30" id="spikeDirtL" src="spikeDirtL.png" title="Left spike dirt">
+				</td>
+
+				<td onclick="select('spikeDirt')"><img height="30" width="30" id="spikeDirt" src="spikeDirt.png" title="Spike dirt">
+				</td>
+
+				<td onclick="select('spikeDirtR')"><img height="30" id="spikeDirtR" src="spikeDirtR.png" title="Right spike dirt" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('spikeDirtRrotD')"><img height="30" id="spikeDirtRrotD" src="spikeDirtRrotD.png" title="Right spike dirt pointing down" width="30">
+				</td>
+
+				<td onclick="select('spikeDirtrotD')"><img height="30" width="30" id="spikeDirtrotD" src="spikeDirtrotD.png" title="Spike dirt pointing down">
+				</td>
+
+				<td onclick="select('spikeDirtLrotD')"><img height="30" width="30" id="spikeDirtLrotD" src="spikeDirtLrotD.png" title="Left spike dirt pointing down">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('spikeDirtLrotR')"><img height="30" width="30" id="spikeDirtLrotR" src="spikeDirtLrotR.png" title="Left spike dirt pointing right">
+				</td>
+
+				<td onclick="select('spikeDirtrotR')"><img height="30" width="30" id="spikeDirtrotR" src="spikeDirtrotR.png" title="Spike dirt pointing right">
+				</td>
+
+				<td onclick="select('spikeDirtRrotR')"><img height="30" id="spikeDirtRrotR" src="spikeDirtRrotR.png" title="Right spike dirt pointing right" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('spikeDirtLrotL')"><img height="30" width="30" id="spikeDirtLrotL" src="spikeDirtLrotL.png" title="Left spike dirt pointing left">
+				</td>
+
+				<td onclick="select('spikeDirtrotL')"><img height="30" width="30" id="spikeDirtrotL" src="spikeDirtrotL.png" title="Spike dirt pointing left">
+				</td>
+
+				<td onclick="select('spikeDirtRrotL')"><img height="30" id="spikeDirtRrotL" src="spikeDirtRrotL.png" title="Right spike dirt pointing left" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('breakabletop')"><img height="30" id="breakabletop" src="breakabletop.png" title="Breakable top" width="30">
+				</td>
+
+				<td onclick="select('breakablebottom')"><img height="30" width="30" id="breakablebottom" src="breakablebottom.png" title="Breakable bottom">
+				</td>
+
+				<td onclick="select('breakableright')"><img height="30" width="30" id="breakableright" src="breakableright.png" title="Breakable right">
+				</td>
+
+				<td onclick="select('breakableleft')"><img height="30" id="breakableleft" src="breakableleft.png" title="Breakable left" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('breakabletopleft')"><img height="30" id="breakabletopleft" src="breakabletopleft.png" title="Breakable top left" width="30">
+				</td>
+
+				<td onclick="select('breakablebottomleft')"><img height="30" width="30" id="breakablebottomleft" src="breakablebottomleft.png" title="Breakable bottom left">
+				</td>
+
+				<td onclick="select('breakabletopright')"><img height="30" width="30" id="breakabletopright" src="breakabletopright.png" title="Breakable top right">
+				</td>
+
+				<td onclick="select('breakablebottomright')"><img height="30" id="breakablebottomright" src="breakablebottomright.png" title="Breakable bottom right" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('breakableedgethreeleft')"><img height="30" id="breakableedgethreeleft" src="breakableedgethreeleft.png" title="Breakable edge 3 left" width="30">
+				</td>
+
+				<td onclick="select('breakableedgethreeright')"><img height="30" width="30" id="breakableedgethreeright" src="breakableedgethreeright.png" title="Breakable edge 3 right">
+				</td>
+
+				<td onclick="select('breakableedgethreeup')"><img height="30" width="30" id="breakableedgethreeup" src="breakableedgethreeup.png" title="Breakable edge 3 up">
+				</td>
+
+				<td onclick="select('breakableedgethreedown')"><img height="30" id="breakableedgethreedown" src="breakableedgethreedown.png" title="Breakable edge 3 down" width="30">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="select('breakableleftright')"><img height="30" id="breakableleftright" src="breakableleftright.png" title="Breakable left right" width="30">
+				</td>
+
+				<td onclick="select('breakabletopdown')"><img height="30" width="30" id="breakabletopdown" src="breakabletopdown.png" title="Breakable top down">
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	</div>
+
+
+	<img class="mousefollow" height="30" id="cotaImg" src="cota.png"> 
+	<img class="mousefollow" height="30" id="en_flyImg" src="en_fly.png"> 
+	<img class="mousefollow" height="30" id="en_grndImg" src="en_grnd.png"> 
+	<img class="mousefollow" height="30" id="pwr-upImg" src="pwr-up.png"> 
+	<img class="mousefollow" height="30" id="chkptImg" src="chkpt.png"> 
+	<img class="mousefollow" height="30" id="goalImg" src="goal.png"> 
+	<img class="mousefollow" height="30" id="ungr_terrImg" src="ungr_terr.png"> 
+	<img class="mousefollow" height="30" id="grw_terrImg" src="grw_terr.png"> 
+	<img class="mousefollow" height="30" id="brk_terrImg" src="brk_terr.png"> 
+	<img class="mousefollow" height="30" id="vineImg" src="vine.png" width="30">
+	<img class="mousefollow" height="30" id="edgeDImg" src="edgeD.png"> 
+	<img class="mousefollow" height="30" id="edgeRImg" src="edgeR.png"> 
+	<img class="mousefollow" height="30" id="edgeUImg" src="edgeU.png"> 
+	<img class="mousefollow" height="30" id="edgeLImg" src="edgeL.png">
+	<img class="mousefollow" height="30" id="rEndLImg" src="rEndL.png">
+	<img class="mousefollow" height="30" id="rTaperLImg" src="rTaperL.png">
+	<img class="mousefollow" height="30" id="rTaperRImg" src="rTaperR.png">
+	<img class="mousefollow" height="30" id="rEndRImg" src="rEndR.png">
+	<img class="mousefollow" height="30" id="spikeLImg" src="spikeL.png"> 
+	<img class="mousefollow" height="30" id="spikeImg" src="spike.png"> 
+	<img class="mousefollow" height="30" id="spikeRImg" src="spikeR.png">
+	<img class="mousefollow" height="30" id="spikeDirtLImg" src="spikeDirtL.png"> 
+	<img class="mousefollow" height="30" id="spikeDirtImg" src="spikeDirt.png"> 
+	<img class="mousefollow" height="30" id="spikeDirtRImg" src="spikeDirtR.png">
+	<img class="mousefollow" height="30" id="toprightImg" src="topright.png">
+	<img class="mousefollow" height="30" id="topleftImg" src="topleft.png">
+	<img class="mousefollow" height="30" id="bottomrightImg" src="bottomright.png">
+
+	<img class="mousefollow" height="30" id="breakableleftImg" src="breakableleft.png">
+	<img class="mousefollow" height="30" id="breakablerightImg" src="breakableright.png">
+	<img class="mousefollow" height="30" id="breakabletopImg" src="breakabletop.png">
+	<img class="mousefollow" height="30" id="breakablebottomImg" src="breakablebottom.png">
+
+	<img class="mousefollow" height="30" id="breakabletoprightImg" src="breakabletopright.png">
+	<img class="mousefollow" height="30" id="breakabletopleftImg" src="breakabletopleft.png">
+	<img class="mousefollow" height="30" id="breakablebottomrightImg" src="breakablebottomright.png">
+	<img class="mousefollow" height="30" id="breakablebottomleftImg" src="breakablebottomleft.png">
+
+	<img class="mousefollow" height="30" id="breakableedgethreedownImg" src="breakableedgethreedown.png">
+	<img class="mousefollow" height="30" id="breakableedgethreeleftImg" src="breakableedgethreeleft.png">
+	<img class="mousefollow" height="30" id="breakableedgethreeupImg" src="breakableedgethreeup.png">
+	<img class="mousefollow" height="30" id="breakableedgethreerightImg" src="breakableedgethreeright.png">
+
+	<img class="mousefollow" height="30" id="breakableleftrightImg" src="breakableleftright.png">
+	<img class="mousefollow" height="30" id="breakabletopdownImg" src="breakabletopdown.png">
+
+
+	<img class="mousefollow" height="30" id="spikerotDImg" src="spikerotD.png">
+	<img class="mousefollow" height="30" id="spikeLrotDImg" src="spikeLrotD.png">
+	<img class="mousefollow" height="30" id="spikeRrotDImg" src="spikeRrotD.png">
+
+	<img class="mousefollow" height="30" id="spikerotRImg" src="spikerotR.png">
+	<img class="mousefollow" height="30" id="spikeLrotRImg" src="spikeLrotR.png">
+	<img class="mousefollow" height="30" id="spikeRrotRImg" src="spikeRrotR.png">
+
+	<img class="mousefollow" height="30" id="spikerotLImg" src="spikerotL.png">
+	<img class="mousefollow" height="30" id="spikeLrotLImg" src="spikeLrotL.png">
+	<img class="mousefollow" height="30" id="spikeRrotLImg" src="spikeRrotL.png">
+
+
+	<img class="mousefollow" height="30" id="spikeDirtLrotLImg" src="spikeDirtLrotL.png"> 
+	<img class="mousefollow" height="30" id="spikeDirtrotLImg" src="spikeDirtrotL.png"> 
+	<img class="mousefollow" height="30" id="spikeDirtRrotLImg" src="spikeDirtRrotL.png">
+
+	<img class="mousefollow" height="30" id="spikeDirtLrotRImg" src="spikeDirtLrotR.png"> 
+	<img class="mousefollow" height="30" id="spikeDirtrotRImg" src="spikeDirtrotR.png"> 
+	<img class="mousefollow" height="30" id="spikeDirtRrotRImg" src="spikeDirtRrotR.png">
+
+	<img class="mousefollow" height="30" id="spikeDirtLrotDImg" src="spikeDirtLrotD.png"> 
+	<img class="mousefollow" height="30" id="spikeDirtrotDImg" src="spikeDirtrotD.png"> 
+	<img class="mousefollow" height="30" id="spikeDirtRrotDImg" src="spikeDirtRrotD.png">
+
+
+
+	<script src="script.js" type="text/javascript">
+	</script>
+</body>
+</html>

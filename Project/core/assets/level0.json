@@ -1,0 +1,165 @@
+{
+    "physicsSize": [
+        32,
+        18
+    ],
+    "graphicSize": [
+        1024,
+        576
+    ],
+    "gravity": -9.8,
+    "energy": 15,
+    "avatar": {
+        "pos": [
+            1,
+            4
+        ],
+        "size": [
+            0.45,
+            0.61
+        ],
+        "bodytype": "dynamic",
+        "density": 1,
+        "friction": 0,
+        "restitution": 0,
+        "texture": [
+            "dude"
+        ],
+        "sensorsize": [
+            0.183,
+            0.05
+        ],
+        "sensorname": "dudeGroundSensor"
+    },
+    "exit": {
+        "points": [
+            "0.0f",
+            "0.0f",
+            "0.0f",
+            "1.0f",
+            "1.0f",
+            "1.0f",
+            "1.0f",
+            "0.0f"
+        ],
+        "pos": [
+            22,
+            4
+        ],
+        "texture": "exit"
+    },
+    "powerup": {
+        "powerup0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                5,
+                4
+            ],
+            "texture": "powerup"
+        },
+        "powerup1": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                6,
+                4
+            ],
+            "texture": "powerup"
+        },
+        "powerup2": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                8,
+                4
+            ],
+            "texture": "powerup"
+        },
+        "powerup3": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                9,
+                4
+            ],
+            "texture": "powerup"
+        },
+        "powerup4": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                10,
+                4
+            ],
+            "texture": "powerup"
+        }
+    },
+    "checkpoint": {},
+    "enemy": {},
+    "platform": {
+        "platform0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "25.0f",
+                "1.0f",
+                "25.0f",
+                "0.0f"
+            ],
+            "pos": [
+                0,
+                3
+            ],
+            "texture": "platform"
+        }
+    },
+    "vine": {},
+    "root": {},
+    "breakable": {},
+    "Spike": {},
+    "RightSpike": {},
+    "LeftSpike": {}
+}

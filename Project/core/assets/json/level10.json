@@ -1,0 +1,1749 @@
+{
+    "physicsSize": [
+        60,
+        36
+    ],
+    "graphicSize": [
+        1024,
+        576
+    ],
+    "gravity": -9.8,
+    "energy": 0,
+    "avatar": {
+        "pos": [
+            27,
+            35
+        ],
+        "size": [
+            0.45,
+            0.61
+        ],
+        "bodytype": "dynamic",
+        "density": 1,
+        "friction": 0,
+        "restitution": 0,
+        "texture": [
+            "dude"
+        ],
+        "sensorsize": [
+            0.183,
+            0.05
+        ],
+        "sensorname": "dudeGroundSensor"
+    },
+    "exit": {
+        "points": [
+            "0.0f",
+            "0.0f",
+            "0.0f",
+            "1.0f",
+            "1.0f",
+            "1.0f",
+            "1.0f",
+            "0.0f"
+        ],
+        "pos": [
+            31,
+            1
+        ],
+        "texture": "exit"
+    },
+    "powerup": {
+        "powerup0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                33,
+                16
+            ],
+            "texture": "powerup"
+        }
+    },
+    "checkpoint": {},
+    "enemy": {
+        "enemy0": {
+            "pos": [
+                29,
+                10
+            ],
+            "size": [
+                0.45,
+                0.61
+            ],
+            "bodytype": "dynamic",
+            "density": 1,
+            "friction": 0,
+            "restitution": 0,
+            "type": 0,
+            "sensorsize": [
+                0.183,
+                0.05
+            ],
+            "sensorname": "enemySensor"
+        }
+    },
+    "platform": {
+        "platform0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "27.0f",
+                "1.0f",
+                "27.0f",
+                "0.0f"
+            ],
+            "pos": [
+                0,
+                35
+            ],
+            "texture": "platform"
+        },
+        "platform1": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "31.0f",
+                "1.0f",
+                "31.0f",
+                "0.0f"
+            ],
+            "pos": [
+                29,
+                35
+            ],
+            "texture": "platform"
+        },
+        "platform2": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "35.0f",
+                "1.0f",
+                "35.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                0,
+                0
+            ],
+            "texture": "platform"
+        },
+        "platform3": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "59.0f",
+                "1.0f",
+                "59.0f",
+                "0.0f"
+            ],
+            "pos": [
+                1,
+                0
+            ],
+            "texture": "platform"
+        },
+        "platform4": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "34.0f",
+                "1.0f",
+                "34.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                59,
+                1
+            ],
+            "texture": "platform"
+        },
+        "platform5": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                55,
+                33
+            ],
+            "texture": "platform"
+        },
+        "platform6": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                43,
+                33
+            ],
+            "texture": "platform"
+        },
+        "platform7": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                4,
+                33
+            ],
+            "texture": "platform"
+        },
+        "platform8": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "32.0f",
+                "1.0f",
+                "32.0f",
+                "0.0f"
+            ],
+            "pos": [
+                8,
+                32
+            ],
+            "texture": "platform"
+        },
+        "platform9": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                47,
+                31
+            ],
+            "texture": "platform"
+        },
+        "platform10": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                51,
+                31
+            ],
+            "texture": "platform"
+        },
+        "platform11": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "8.0f",
+                "1.0f",
+                "8.0f",
+                "0.0f"
+            ],
+            "pos": [
+                51,
+                30
+            ],
+            "texture": "platform"
+        },
+        "platform12": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                55,
+                26
+            ],
+            "texture": "platform"
+        },
+        "platform13": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "0.0f"
+            ],
+            "pos": [
+                56,
+                26
+            ],
+            "texture": "platform"
+        },
+        "platform14": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                55,
+                8
+            ],
+            "texture": "platform"
+        },
+        "platform15": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                55,
+                4
+            ],
+            "texture": "platform"
+        },
+        "platform16": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                55,
+                6
+            ],
+            "texture": "platform"
+        },
+        "platform17": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                51,
+                12
+            ],
+            "texture": "platform"
+        },
+        "platform18": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                51,
+                16
+            ],
+            "texture": "platform"
+        },
+        "platform19": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                55,
+                13
+            ],
+            "texture": "platform"
+        },
+        "platform20": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                31
+            ],
+            "texture": "platform"
+        },
+        "platform21": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                30
+            ],
+            "texture": "platform"
+        },
+        "platform22": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                16,
+                28
+            ],
+            "texture": "platform"
+        },
+        "platform23": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                16,
+                27
+            ],
+            "texture": "platform"
+        },
+        "platform24": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                8,
+                27
+            ],
+            "texture": "platform"
+        },
+        "platform25": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                1,
+                29
+            ],
+            "texture": "platform"
+        },
+        "platform26": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                4,
+                27
+            ],
+            "texture": "platform"
+        },
+        "platform27": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                9,
+                27
+            ],
+            "texture": "platform"
+        },
+        "platform28": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                25
+            ],
+            "texture": "platform"
+        },
+        "platform29": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                13,
+                25
+            ],
+            "texture": "platform"
+        },
+        "platform30": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                16,
+                26
+            ],
+            "texture": "platform"
+        },
+        "platform31": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                4,
+                25
+            ],
+            "texture": "platform"
+        },
+        "platform32": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                4,
+                24
+            ],
+            "texture": "platform"
+        },
+        "platform33": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                1,
+                21
+            ],
+            "texture": "platform"
+        },
+        "platform34": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                4,
+                16
+            ],
+            "texture": "platform"
+        },
+        "platform35": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "28.0f",
+                "1.0f",
+                "28.0f",
+                "0.0f"
+            ],
+            "pos": [
+                20,
+                29
+            ],
+            "texture": "platform"
+        },
+        "platform36": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                47,
+                30
+            ],
+            "texture": "platform"
+        },
+        "platform37": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                29,
+                25
+            ],
+            "texture": "platform"
+        },
+        "platform38": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "12.0f",
+                "1.0f",
+                "12.0f",
+                "0.0f"
+            ],
+            "pos": [
+                17,
+                26
+            ],
+            "texture": "platform"
+        },
+        "platform39": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "19.0f",
+                "1.0f",
+                "19.0f",
+                "0.0f"
+            ],
+            "pos": [
+                33,
+                26
+            ],
+            "texture": "platform"
+        },
+        "platform40": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                51,
+                27
+            ],
+            "texture": "platform"
+        },
+        "platform41": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                33,
+                23
+            ],
+            "texture": "platform"
+        },
+        "platform42": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "8.0f",
+                "1.0f",
+                "8.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                51,
+                4
+            ],
+            "texture": "platform"
+        },
+        "platform43": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                46,
+                4
+            ],
+            "texture": "platform"
+        },
+        "platform44": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "8.0f",
+                "1.0f",
+                "8.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                46,
+                5
+            ],
+            "texture": "platform"
+        },
+        "platform45": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "7.0f",
+                "1.0f",
+                "7.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                42,
+                1
+            ],
+            "texture": "platform"
+        },
+        "platform46": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "8.0f",
+                "1.0f",
+                "8.0f",
+                "0.0f"
+            ],
+            "pos": [
+                38,
+                12
+            ],
+            "texture": "platform"
+        },
+        "platform47": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "11.0f",
+                "1.0f",
+                "11.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                38,
+                1
+            ],
+            "texture": "platform"
+        },
+        "platform48": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                51,
+                23
+            ],
+            "texture": "platform"
+        },
+        "platform49": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                52,
+                23
+            ],
+            "texture": "platform"
+        },
+        "platform50": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                55,
+                20
+            ],
+            "texture": "platform"
+        },
+        "platform51": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                51,
+                20
+            ],
+            "texture": "platform"
+        },
+        "platform52": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "8.0f",
+                "1.0f",
+                "8.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                46,
+                13
+            ],
+            "texture": "platform"
+        },
+        "platform53": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "14.0f",
+                "1.0f",
+                "14.0f",
+                "0.0f"
+            ],
+            "pos": [
+                37,
+                23
+            ],
+            "texture": "platform"
+        },
+        "platform54": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                37,
+                20
+            ],
+            "texture": "platform"
+        },
+        "platform55": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                33,
+                12
+            ],
+            "texture": "platform"
+        },
+        "platform56": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "6.0f",
+                "1.0f",
+                "6.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                4,
+                1
+            ],
+            "texture": "platform"
+        },
+        "platform57": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                4,
+                7
+            ],
+            "texture": "platform"
+        },
+        "platform58": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                1,
+                10
+            ],
+            "texture": "platform"
+        },
+        "platform59": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                4,
+                11
+            ],
+            "texture": "platform"
+        },
+        "platform60": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "6.0f",
+                "1.0f",
+                "6.0f",
+                "0.0f"
+            ],
+            "pos": [
+                5,
+                15
+            ],
+            "texture": "platform"
+        },
+        "platform61": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                8,
+                3
+            ],
+            "texture": "platform"
+        },
+        "platform62": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                8,
+                8
+            ],
+            "texture": "platform"
+        },
+        "platform63": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                9,
+                10
+            ],
+            "texture": "platform"
+        },
+        "platform64": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "7.0f",
+                "1.0f",
+                "7.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                1
+            ],
+            "texture": "platform"
+        },
+        "platform65": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                13,
+                4
+            ],
+            "texture": "platform"
+        },
+        "platform66": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "6.0f",
+                "1.0f",
+                "6.0f",
+                "0.0f"
+            ],
+            "pos": [
+                14,
+                4
+            ],
+            "texture": "platform"
+        },
+        "platform67": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "7.0f",
+                "1.0f",
+                "7.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                27,
+                1
+            ],
+            "texture": "platform"
+        },
+        "platform68": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "11.0f",
+                "1.0f",
+                "11.0f",
+                "0.0f"
+            ],
+            "pos": [
+                16,
+                7
+            ],
+            "texture": "platform"
+        },
+        "platform69": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                20,
+                4
+            ],
+            "texture": "platform"
+        },
+        "platform70": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                8,
+                19
+            ],
+            "texture": "platform"
+        },
+        "platform71": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "0.0f"
+            ],
+            "pos": [
+                11,
+                15
+            ],
+            "texture": "platform"
+        },
+        "platform72": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                9,
+                22
+            ],
+            "texture": "platform"
+        },
+        "platform73": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                16
+            ],
+            "texture": "platform"
+        },
+        "platform74": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                13,
+                19
+            ],
+            "texture": "platform"
+        },
+        "platform75": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                16,
+                20
+            ],
+            "texture": "platform"
+        },
+        "platform76": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                13
+            ],
+            "texture": "platform"
+        },
+        "platform77": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "0.0f"
+            ],
+            "pos": [
+                14,
+                10
+            ],
+            "texture": "platform"
+        },
+        "platform78": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                16,
+                11
+            ],
+            "texture": "platform"
+        },
+        "platform79": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                17,
+                15
+            ],
+            "texture": "platform"
+        },
+        "platform80": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "8.0f",
+                "1.0f",
+                "8.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                20,
+                16
+            ],
+            "texture": "platform"
+        },
+        "platform81": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "16.0f",
+                "1.0f",
+                "16.0f",
+                "0.0f"
+            ],
+            "pos": [
+                17,
+                12
+            ],
+            "texture": "platform"
+        },
+        "platform82": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                25,
+                13
+            ],
+            "texture": "platform"
+        },
+        "platform83": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "12.0f",
+                "1.0f",
+                "12.0f",
+                "0.0f"
+            ],
+            "pos": [
+                26,
+                15
+            ],
+            "texture": "platform"
+        },
+        "platform84": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "12.0f",
+                "1.0f",
+                "12.0f",
+                "0.0f"
+            ],
+            "pos": [
+                25,
+                20
+            ],
+            "texture": "platform"
+        },
+        "platform85": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                25,
+                18
+            ],
+            "texture": "platform"
+        },
+        "platform86": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "0.0f"
+            ],
+            "pos": [
+                38,
+                15
+            ],
+            "texture": "platform"
+        },
+        "platform87": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                42,
+                16
+            ],
+            "texture": "platform"
+        },
+        "platform88": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "7.0f",
+                "1.0f",
+                "7.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                32,
+                1
+            ],
+            "texture": "platform"
+        },
+        "platform89": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                25,
+                21
+            ],
+            "texture": "platform"
+        },
+        "platform90": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "2.0f",
+                "1.0f",
+                "2.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                47,
+                30
+            ],
+            "texture": "platform"
+        },
+        "platform91": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "5.0f",
+                "1.0f",
+                "5.0f",
+                "1.0f",
+                "0.0f"
+            ],
+            "pos": [
+                12,
+                1
+            ],
+            "texture": "platform"
+        },
+        "platform92": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "3.0f",
+                "1.0f",
+                "3.0f",
+                "0.0f"
+            ],
+            "pos": [
+                13,
+                7
+            ],
+            "texture": "platform"
+        }
+    },
+    "vine": {},
+    "root": {
+        "root0": {
+            "pos": [
+                48,
+                30
+            ],
+            "direction": 1,
+            "length": 2
+        },
+        "root1": {
+            "pos": [
+                26,
+                21
+            ],
+            "direction": 1,
+            "length": 2
+        },
+        "root2": {
+            "pos": [
+                26,
+                13
+            ],
+            "direction": 1,
+            "length": 2
+        },
+        "root3": {
+            "pos": [
+                22,
+                13
+            ],
+            "direction": 1,
+            "length": 6
+        },
+        "root4": {
+            "pos": [
+                9,
+                11
+            ],
+            "direction": 1,
+            "length": 2
+        },
+        "root5": {
+            "pos": [
+                13,
+                1
+            ],
+            "direction": 1,
+            "length": 5
+        }
+    },
+    "breakable": {
+        "breakable0": {
+            "points": [
+                "0.0f",
+                "0.0f",
+                "0.0f",
+                "1.0f",
+                "4.0f",
+                "1.0f",
+                "4.0f",
+                "0.0f"
+            ],
+            "pos": [
+                28,
+                7
+            ],
+            "texture": "breakable"
+        }
+    },
+    "Spike": {},
+    "RightSpike": {},
+    "LeftSpike": {}
+}

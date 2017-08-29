@@ -1,0 +1,150 @@
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#check{
+	text-align: center;
+	line-height: 300px;
+	color:limegreen;
+	position: fixed;
+	width: 300px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px; /* Negative half of height. */
+	margin-left: -150px; /* Negative half of width. */
+	display: none;
+}
+
+.elements {
+	display: block;
+	margin: auto;
+	width: 146px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.gridcell{
+	text-align: center;
+}
+
+.elements td:hover {
+	border: 2px solid purple;
+}
+
+#dirts {
+	width: 138px;
+}
+
+.selection {
+	padding-top: 0;
+	margin-bottom: -10px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+table{
+	border-collapse: collapse;
+	table-layout:fixed;
+}
+
+td{
+	overflow: hidden;
+}
+
+table#preview {
+	display: block;
+	margin: auto;
+	min-width: 300px;
+	border: 2px solid #eee;
+	table-layout:fixed
+}
+
+#preview td {
+	border: 1px solid #ccc;
+	height: 30px;
+	width: 30px;
+	overflow:hidden;
+}
+
+div {
+	padding: 10px 5px;
+}
+
+#json{
+	margin-left:55px;
+}
+
+#jsonView{
+	overflow:auto;
+	height:35vh;
+	float:left;
+	width:100%;
+	background-color:#f5f5f5;
+}
+
+#floatLeft{
+	float:left;
+	display: inline-block;
+	width:75%;
+	padding:0;
+}
+
+#view {
+	height: 65vh;
+	width: 100%;
+	display: inline-block;
+	float: left;
+	background-color: #eee;
+	overflow: auto;
+	padding-top: 70px;
+	padding-left: 50px;
+}
+
+#controls {
+	height: 100vh;
+	width: 25%;
+	display: inline-block;
+	float: right;
+	text-align: center;
+	overflow: auto;
+}
+
+#selectedTxt {
+	font-family: 'Josefin Slab', serif;
+	font-size: 18px;
+}
+
+#inputs_hw {
+	text-align: left;
+}
+
+pre {
+	margin: 0;
+	text-align: left;
+}
+
+.string {
+	color: green;
+}
+
+.number {
+	color: blue;
+}
+
+.boolean {
+	color: purple;
+}
+
+.null {
+	color: magenta;
+}
+
+.key {
+	color: coral;
+}
